@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-header-logo">
+        <img src="img/main-logo.png" width="154" height="64" alt="Логотип магазина Глейси">
+      </a>
+      <ul class="site-nav">
+        <li>
+          <div class="catalog-title">Каталог</div>
+          <ul class="catalog-list">
+            <li class="catalog-item new"><a>Новинки</a></li>
+            <li class="catalog-item"><a>Сливочное</a></li>
+            <li class="catalog-item current"><a>Щербеты</a></li>
+            <li class="catalog-item"><a>Фруктовый лёд</a></li>
+            <li class="catalog-item"><a>Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="delivery.html">Доставка и оплата</a></li>
+        <li><a href="info.html">О компании</a></li>
+      </ul>
+      <nav class="user-nav">
+        <div class="search">Поиск</div>
+        <div class="login">Вход</div>
+        <div class="cart">Пусто</div>
+      </nav>
+    </nav>
+  </header>
+  <main>
+    <section class="seo">
+      <h3 class="seo-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+        производства на развес</h3>
+      <div class="seo-content">
+        <div class="seo-item">
+          <img src="img/icecream" width="49" height="49" alt="Мороженое">
+          <p class="seo-item__content">
+            Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+            проверенных временем технологий
+          </p>
+        </div>
+        <div class="seo-item">
+          <img src="img/leaf" width="49" height="49" alt="Листик">
+          <p class="seo-item__content">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+            добавки произведены из натурального, экологически чистого сырья
+          </p>
+        </div>
+
+        <div class="seo-item">
+          <img src="img/ingridients" width="49" height="49" alt="Натуральные ингридиенты">
+          <p class="seo-item__content">
+            Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество
+          </p>
+        </div>
+        <div class="seo-item">
+          <img src="img/termometer" width="49" height="49" alt="Градусник">
+          <p class="seo-item__content">
+            Доставка нашего мороженого до заказчика производится в специальном термопаке, который не даёт мороженому
+            растаять в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <article class="news-blog">
+        <header class="news-blog__header">Новое в нашем блоге</header>
+        <a>
+          <p>
+            10 способов сервировки фруктовых щербетов к столу
+          </p>
+        </a>
+      </article>
+      <article class="news-newsletter">
+        <p class="news-newsletter__description">
+          Подпишитесь на нашу сладку рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ерунды. Честно =)
+        </p>
+        <form action="post" class="news-newsletter__container">
+          <input type="text" placeholder="email@example.com" class="news-newsletter__input">
+          <button class="news-button">Отправить</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="media">
+      <ul class="media-list">
+        <li>
+          <a href="https://twitter.com/gllacy">
+            <img src="img/twitter.png" width="40" height="40" alt="twitter">
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/gllacy">
+            <img src="img/instagram.png" width="40" height="40" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://fb.com/gllacy">
+            <img src="img/fb.png" width="40" height="40" alt="fb">
+          </a>
+        </li>
+        <li>
+          <a href="https://vk.com/gllacy">
+            <img src="img/vk.png" width="40" height="40" alt="vk">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer-info">
+      <ul class="footer-info__list">
+        <li class="footer-info__item important">
+          <img src="img/heart" width="15" height="13" alt="Поставщики">
+          <a href="providers.html">
+            <p>
+              Для поставщиков
+            </p>
+          </a>
+        </li>
+        <li class="footer-info__item">
+          <a href="production.html">
+            <p>
+              О производстве
+            </p>
+          </a>
+        </li>
+        <li class="footer-info__item">
+          <a href="documents.html">
+            <p>
+              Наши документы
+            </p>
+          </a>
+        </li>
+        <li class="footer-info__item">
+          <a href="ecology.html">
+            <p>
+              Экология
+            </p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="credintials">
+      <img src="img/htmlacademy.png" width="109" height="39" alt="Лого HTML Academy">
+      <p>Сделано в HTML Academy &#169; 2019</p>
+    </div>
+  </footer>
+</body>
+
 </html>
