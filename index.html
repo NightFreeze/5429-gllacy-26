@@ -10,16 +10,16 @@
 
   <header class="main-header">
     <nav class="main-nav">
-      <img src="img/main-logo.png" width="154" height="64" alt="Логотип магазина Глейси">
+      <a href=""><img src="img/main-logo.png" width="154" height="64" alt="Логотип магазина Глейси"></a>
       <ul class="site-nav">
         <li><a href="catalog.html"></a>Каталог</a></li>
-        <li><a href="">Доставка и оплата</a></li>
-        <li><a href="">О компании</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
       </ul>
       <nav class="user-nav">
-        <div class="search">Поиск</div>
-        <div class="login">Вход</div>
-        <div class="cart">Пусто</div>
+        <a href=""><div class="search">Поиск</div></a>
+        <a href=""><div class="login">Вход</div></a>
+        <a href=""><div class="cart">Пусто</div></a>
       </nav>
     </nav>
   </header>
@@ -29,14 +29,12 @@
         производства на развес</h3>
       <div class="seo-content">
         <div class="seo-item">
-          <img src="img/icecream" width="49" height="49" alt="Мороженое">
           <p class="seo-item__content">
             Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
             проверенных временем технологий
           </p>
         </div>
         <div class="seo-item">
-          <img src="img/leaf" width="49" height="49" alt="Листик">
           <p class="seo-item__content">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
             добавки произведены из натурального, экологически чистого сырья
@@ -44,14 +42,12 @@
         </div>
 
         <div class="seo-item">
-          <img src="img/ingridients" width="49" height="49" alt="Натуральные ингридиенты">
           <p class="seo-item__content">
             Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество
           </p>
         </div>
         <div class="seo-item">
-          <img src="img/termometer" width="49" height="49" alt="Градусник">
           <p class="seo-item__content">
             Доставка нашего мороженого до заказчика производится в специальном термопаке, который не даёт мороженому
             растаять в пути и позволяет сохранить превосходный вкус.
@@ -61,79 +57,65 @@
     </section>
     <section class="news">
       <article class="news-blog">
-        <header class="news-blog__header">Новое в нашем блоге</header>
-        <a>
-          <p>
-            10 способов сервировки фруктовых щербетов к столу
-          </p>
-        </a>
+        <h2 class="news-blog__header">Новое в нашем блоге</h2>
+        <a>10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       <article class="news-newsletter">
         <p class="news-newsletter__description">
           Подпишитесь на нашу сладку рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ерунды. Честно =)
         </p>
-        <form action="post" class="news-newsletter__container">
+        <form method="POST" action="http://echo.htmlacademy.ru" class="news-newsletter__container">
           <input type="text" placeholder="email@example.com" class="news-newsletter__input">
-          <button class="news-button">Отправить</button>
+          <button type="submit" class="news-button">Отправить</button>
         </form>
       </article>
     </section>
   </main>
   <footer class="footer">
-    <nav class="media">
-      <ul class="media-list">
-        <li>
-          <a href="">
-            <img src="img/twitter.png" width="40" height="40" alt="twitter">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/instagram.png" width="40" height="40" alt="instagram">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/fb.png" width="40" height="40" alt="fb">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/vk.png" width="40" height="40" alt="vk">
-          </a>
-        </li>
-      </ul>
-    </nav>
+     <ul class="media-list">
+       <li>
+         <a href="">
+           <img src="img/twitter.png" width="40" height="40" alt="twitter">
+         </a>
+       </li>
+       <li>
+         <a href="">
+           <img src="img/instagram.png" width="40" height="40" alt="instagram">
+         </a>
+       </li>
+       <li>
+         <a href="">
+           <img src="img/fb.png" width="40" height="40" alt="fb">
+         </a>
+       </li>
+       <li>
+         <a href="">
+           <img src="img/vk.png" width="40" height="40" alt="vk">
+         </a>
+       </li>
+     </ul>
     <nav class="footer-info">
       <ul class="footer-info__list">
         <li class="footer-info__item important">
           <img src="img/heart" width="15" height="13" alt="Поставщики">
           <a href="">
-            <p>
-              Для поставщиков
-            </p>
+           Для поставщиков
           </a>
         </li>
         <li class="footer-info__item">
           <a href="">
-            <p>
-              О производстве
-            </p>
+            О производстве
           </a>
         </li>
         <li class="footer-info__item">
           <a href="">
-            <p>
-              Наши документы
-            </p>
+            Наши документы
           </a>
         </li>
         <li class="footer-info__item">
           <a href="">
-            <p>
-              Экология
-            </p>
+            Экология
           </a>
         </li>
       </ul>
