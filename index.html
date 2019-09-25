@@ -12,7 +12,16 @@
     <nav class="main-nav">
       <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
       <ul class="site-nav">
-        <li><a href="catalog.html">Каталог</a></li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+          <ul class="catalog-list">
+            <li class="catalog-item"><a href="#">Новинки</a></li>
+            <li class="catalog-item"><a href="#">Сливочное</a></li>
+            <li class="catalog-item"><a href="#">Щербеты</a></li>
+            <li class="catalog-item"><a href="#">Фруктовый лёд</a></li>
+            <li class="catalog-item"><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
@@ -20,10 +29,20 @@
         <a href="#">
           <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
         </a>
+        <form class="search" method="post" action="#">
+          <input id="search" type="text" placeholder="Что ищем?" aria-label="Поле поиска">
+        </form>
         <a href="#">
           <img src="img/entrance.svg" width="21" height="19" alt="Вход">
           <div class="login">Вход</div>
         </a>
+        <form class="login" method="post" action="https://echo.htmlacademy.ru">
+          <input id="user-login" type="text" placeholder="Электронная почта" aria-label="Введите электронную почту">
+          <input id="user-password" type="password" placeholder="Пароль" aria-label="Введите пароль">
+          <a href="#">Забыли пароль</a>
+          <a href="#">Новая регистрация</a>
+          <button type="submit" class="button">Войти</button>
+        </form>
         <a href="#">
           <img src="img/basket.svg" width="21" height="19" alt="Корзина">
           <div class="cart">Пусто</div>
@@ -79,10 +98,19 @@
         </p>
         <form method="POST" action="http://echo.htmlacademy.ru" class="news-newsletter__container">
           <input type="text" placeholder="email@example.com" class="news-newsletter__input">
-          <button type="submit" class="news-button">Отправить</button>
+          <button type="submit" class="button">Отправить</button>
         </form>
       </section>
     </section>
+    <div>
+      <img src="img/cross-big.svg" width="18"  height="17" alt="Закрыть">
+      <form class="contact-form" method="post" action="#">
+        <input id="contact-login" type="text" placeholder="Как вас зовут?" aria-label="Введите имя">
+        <input id="contact-email" type="text" placeholder="Ваша почта для ответа?" aria-label="Введите вашу почту">
+        <textarea aria-label="Введите ваше сообщение">Напишите что-нибудь</textarea>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+    </div>
   </main>
   <footer class="footer">
     <ul class="media-list">
