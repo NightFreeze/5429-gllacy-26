@@ -11,29 +11,31 @@
 
 <body>
 
-  <header class="main-header">
-    <nav class="main-nav">
-      <a href="index.html" class="main-header-logo">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+  <header class="header">
+    <nav class="main-navigation">
+      <a href="index.html">
+        <img class="main-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
-      <ul class="site-nav">
-        <li class="current-page"><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+      <ul class="main-navigation__list">
+        <li class="navigation__item navigation__item_current"><a href="#">Каталог</a></li>
+        <li class="navigation__item"><a href="#">Доставка и оплата</a></li>
+        <li class="navigation__item"><a href="#">О компании</a></li>
       </ul>
-      <nav class="user-nav">
+      <nav class="user-navigation">
         <a href="#">
-          <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
+          <img class="user-navigation__search-image" src="img/loupe.svg" width="17" height="17" alt="Поиск">
         </a>
         <a href="#">
-          <img src="img/entrance.svg" width="21" height="19" alt="Вход">
-          <div class="login">Вход</div>
+          <!-- Нужно ли img класть в div? -->
+          <img class="user-navigation__login-image" src="img/entrance.svg" width="21" height="19" alt="Вход">
+          <div class="user-navigation__login-label">Вход</div>
         </a>
         <a href="#">
-          <img src="img/basket-red.svg" width="21" height="19" alt="Корзина">
-          <div class="cart">2 товара</div>
+          <!-- Тот же вопрос -->
+          <img class="user-navigation__cart-image" src="img/basket-red.svg" width="21" height="19" alt="Корзина">
+          <div class="user-navigation__cart-label">2 товара</div>
         </a>
-        <div class="popup-cart">
+        <div class="popup-cart visually-hidden">
           <ul class="popup-cart__list">
             <li>
               <div class="popup-cart__item">
@@ -54,21 +56,17 @@
               </div>
             </li>
           </ul>
-          <button type="submit" class="button">Оформить заказ</button>
+          <button type="submit">Оформить заказ</button>
         </div>
       </nav>
-      <section class="working-hours">
-        <p class="working-hours__hours">с 8 до 22, ежендневно</p>
-        <p class="working-hours__phone">8 812 450-25-25</p>
-      </section>
     </nav>
   </header>
   <main>
     <section class="breadcrumbs">
-      <ul class="breadcrumbs-list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">&#187; Каталог</a></li>
-        <li><a>&#187; Сливочное</a></li>
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#">&#187; Каталог</a></li>
+        <li class="breadcrumbs__item"><a>&#187; Сливочное</a></li>
       </ul>
     </section>
     <h1>Сливочное мороженое</h1>
@@ -136,57 +134,57 @@
     </section>
   </main>
   <footer class="footer">
-    <ul class="media-list">
-      <li>
+    <ul class="footer__media-list">
+      <li class="footer__media-item">
         <a href="#">
-          <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+          <img class="footer__media-logo" src="img/twitter.svg" width="40" height="40" alt="twitter">
         </a>
       </li>
-      <li>
+      <li class="footer__media-item">
         <a href="#">
-          <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+          <img class="footer__media-logo" src="img/instagram.svg" width="40" height="40" alt="instagram">
         </a>
       </li>
-      <li>
+      <li class="footer__media-item">
         <a href="#">
-          <img src="img/fb.svg" width="40" height="40" alt="fb">
+          <img class="footer__media-logo" src="img/fb.svg" width="40" height="40" alt="fb">
         </a>
       </li>
-      <li>
+      <li class="footer__media-item">
         <a href="#">
-          <img src="img/vk.svg" width="40" height="40" alt="vk">
+          <img class="footer__media-logo" src="img/vk.svg" width="40" height="40" alt="vk">
         </a>
       </li>
     </ul>
-    <ul class="footer-info__list">
-      <li class="footer-info__item important">
+    <ul class="footer__info-list">
+      <li class="footer__info-item footer__info-item_important">
         <a href="#">
           Для поставщиков
         </a>
       </li>
-      <li class="footer-info__item">
+      <li class="footer__info-item">
         <a href="#">
           О производстве
         </a>
       </li>
-      <li class="footer-info__item">
+      <li class="footer__info-item">
         <a href="#">
           Наши документы
         </a>
       </li>
-      <li class="footer-info__item">
+      <li class="footer__info-item">
         <a href="#">
           Экология
         </a>
       </li>
     </ul>
-    <div class="credintials">
+    <div class="footer__credintials">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="109" height="39" alt="Лого HTML Academy">
         <p>Сделано в HTML Academy &#169; 2019</p>
       </a>
     </div>
-  </footer>
+  </footer>s
 </body>
 
 </html>
