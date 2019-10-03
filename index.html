@@ -30,15 +30,18 @@
       </ul>
       <nav class="user-navigation">
         <a href="#">
-          <img class="user-navigation__search-image" src="img/loupe.svg" width="17" height="17" alt="Поиск">
+          <div class="user-navigation__search-image-container">
+            <img class="user-navigation__search-image" src="img/loupe.svg" width="17" height="17" alt="Поиск">
+          </div>
         </a>
         <form class="user-navigation__search-form visually-hidden" method="post" action="#">
           <input id="search" type="text" placeholder="Что ищем?" aria-label="Поле поиска">
         </form>
         <a href="#">
-          <!-- Нужно ли img класть в div? -->
-          <img class="user-navigation__login-image" src="img/entrance.svg" width="21" height="19" alt="Вход">
-          <div class="user-navigation__login-label">Вход</div>
+          <div class="user-navigation__login-container">
+            <img class="user-navigation__login-image" src="img/entrance.svg" width="21" height="19" alt="Вход">
+            <div class="user-navigation__login-label">Вход</div>
+          </div>
         </a>
         <form class="form visually-hidden" method="post" action="https://echo.htmlacademy.ru">
           <input id="user-login" type="text" placeholder="Электронная почта" aria-label="Введите электронную почту">
@@ -49,8 +52,10 @@
         </form>
         <a href="#">
           <!-- Тот же вопрос -->
-          <img class="user-navigation__cart-image" src="img/basket.svg" width="21" height="19" alt="Корзина">
-          <div class="user-navigation__cart-label">Пусто</div>
+          <div class="user-navigation__cart-container">
+            <img class="user-navigation__cart-image" src="img/basket.svg" width="21" height="19" alt="Корзина">
+            <div class="user-navigation__cart-label">Пусто</div>
+          </div>
         </a>
       </nav>
     </nav>
@@ -97,14 +102,17 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       <section class="news__newsletter">
-        <p class="news__newsletter-description">
-          Подпишитесь на нашу сладку рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой ерунды. Честно =)
-        </p>
-        <form class="news__newsletter-container" method="POST" action="http://echo.htmlacademy.ru">
-          <input type="text" placeholder="email@example.com" class="news-newsletter__input">
-          <button type="submit" class="button">Отправить</button>
-        </form>
+        <div class="news__background">
+          <p class="news__newsletter-description">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой ерунды. Честно =)
+          </p>
+          <form class="news__newsletter-container" method="POST" action="http://echo.htmlacademy.ru">
+            <input class="news__newsletter-input" type="text" placeholder="email@example.com"
+              class="news-newsletter__input">
+            <button type="submit" class="button">Отправить</button>
+          </form>
+        </div>
       </section>
     </section>
     <section class="ask-form visually-hidden">
@@ -121,22 +129,30 @@
     <ul class="footer__media-list">
       <li class="footer__media-item">
         <a href="#">
-          <img class="footer__media-logo" src="img/twitter.svg" width="40" height="40" alt="twitter">
+          <div>
+            <img class="footer__media-logo" src="img/twitter.svg" width="40" height="40" alt="twitter">
+          </div>
         </a>
       </li>
       <li class="footer__media-item">
         <a href="#">
-          <img class="footer__media-logo" src="img/instagram.svg" width="40" height="40" alt="instagram">
+          <div>
+            <img class="footer__media-logo" src="img/instagram.svg" width="40" height="40" alt="instagram">
+          </div>
         </a>
       </li>
       <li class="footer__media-item">
         <a href="#">
-          <img class="footer__media-logo" src="img/fb.svg" width="40" height="40" alt="fb">
+          <div>
+            <img class="footer__media-logo" src="img/fb.svg" width="40" height="40" alt="fb">
+          </div>
         </a>
       </li>
       <li class="footer__media-item">
         <a href="#">
-          <img class="footer__media-logo" src="img/vk.svg" width="40" height="40" alt="vk">
+          <div>
+            <img class="footer__media-logo" src="img/vk.svg" width="40" height="40" alt="vk">
+          </div>
         </a>
       </li>
     </ul>
@@ -164,8 +180,10 @@
     </ul>
     <div class="footer__credintials">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="109" height="39" alt="Лого HTML Academy">
-        <p>Сделано в HTML Academy &#169; 2019</p>
+        <div>
+          <img src="img/logo-htmlacademy.svg" width="109" height="39" alt="Лого HTML Academy">
+        </div>
+        <p>Сделано в <span>HTML Academy</span> &#169; 2019</p>
       </a>
     </div>
   </footer>

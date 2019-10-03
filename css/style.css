@@ -1,3 +1,4 @@
+/* global */
 body {
   margin: 0;
   padding: 0;
@@ -18,13 +19,245 @@ ul {
 a {
   text-decoration: none;
   color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255, 0.4);
+  cursor: pointer;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fefefe;
+
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+
+  padding: 15px 20px;
+}
+
+button:hover {
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+button:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+
+input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+
+  border-radius: 10px;
+
+  padding-left: 15px;
 }
 
 .visually-hidden {
   display: none;
 }
 
+/* for both pages */
+
 .main-navigation {
   font-weight: 500;
-  line-height: 100%;
+  line-height: 16px;
+}
+
+.main-navigation__home-link {
+  border-bottom: none;
+}
+
+.user-navigation {
+  font-size: 14px;
+}
+
+.user-navigation__search-image-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(160,181,169)
+}
+
+.user-navigation__search-image-container:hover {
+  background-color: #f8f7f4;
+}
+
+.user-navigation__login-container {
+  width: 91px;
+  height: 32px;
+  border-radius: 17px 17px 17px 17px;
+  background-color: rgb(160,181,169)
+}
+
+.user-navigation__login-container:hover {
+  background-color: #f8f7f4;
+}
+
+.user-navigation__cart-container {
+  width: 99px;
+  height: 32px;
+  border-radius: 17px 17px 17px 17px;
+  background-color: rgb(160,181,169)
+}
+
+.user-navigation__cart-container:hover {
+  background-color: #f8f7f4;
+}
+
+.footer__media-item a {
+  text-decoration: none;
+}
+
+.footer__media-logo {
+  border: 3px solid rgb(173, 189, 180);
+  border-radius: 50%;
+}
+
+.footer__info-list {
+  font-size: 13px;
+}
+
+.footer__info-item_important {
+  font-weight: 700;
+}
+
+.footer__credintials a {
+  text-decoration: none;
+}
+
+.footer__credintials span {
+  text-decoration: underline;
+}
+
+/* INDEX */
+
+.seo {
+  border-radius: 30px;
+
+  color: #323232;
+
+  background-image: url("../img/waffel.png");
+}
+
+.seo__header {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.news__blog {
+  border-radius: 30px;
+
+  color: #323232;
+
+  background-image: url("../img/berry.png");
+  background-position-x: -53px;
+  background-position-y: -225px;
+
+  width: 560px;
+  height: 220px;
+}
+
+.news__header {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.news a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #323232;
+
+  border-bottom: 2px solid #323232;
+}
+
+.news__newsletter {
+  border-radius: 30px;
+
+  color: #323232;
+
+  background: url("../img/bg-post.svg") no-repeat;
+  background-size: cover;
+
+  width: 560px;
+  height: 220px;
+}
+
+.news__background {
+  background-color: #f8f7f4;
+  border-radius: 30px;
+
+  width: 552px;
+  height: 212px;
+}
+
+.news__newsletter-input {
+  height: 43px;
+  width: 367px;
+}
+
+/* CATALOG */
+
+.navigation__item_current {
+  width: 85px;
+  height: 31px;
+
+  border-radius: 17px;
+
+  background-color: #d07058;
+
+  text-decoration: none;
+}
+
+.user-navigation__cart-container_active {
+  background-color: #f7f6f3;
+
+  color: #434343;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.catalog-item__header {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.catalog-item__kilo {
+  font-size: 30px;
+}
+
+.catalog-item__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+/* INTERACTIVE ELEMENTS */
+.catalog-list {
+  background-color: #f8f7f4;
+
+  border-radius: 5px;
+}
+
+li .catalog-item{
+  color: #323232;
+}
+
+.catalog-item:first-child {
+  font-weight: 700;
 }
