@@ -1,6 +1,7 @@
 /* global */
 body {
-  margin: 0;
+  width: 1000px;
+  margin: 0 auto;
   padding: 0;
 
   font-weight: 400;
@@ -78,6 +79,25 @@ body {
 .main-navigation {
   font-weight: 500;
   line-height: 16px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+.main-navigation__container {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__list {
+  display: flex;
+  /* align-items: center; */
+}
+
+.main-navigation__item {
+  margin-right: 25px;
 }
 
 .main-navigation__home-link {
@@ -86,13 +106,26 @@ body {
 
 .user-navigation {
   font-size: 14px;
+
+  display: flex;
+  align-items: center;
+}
+
+.user-navigation .link {
+  border-bottom: none;
 }
 
 .user-navigation__search-image-container {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: rgb(160,181,169)
+  background-color: rgb(160,181,169);
+
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-navigation__search-image-container:hover {
@@ -102,23 +135,59 @@ body {
 .user-navigation__login-container {
   width: 91px;
   height: 32px;
+  margin-right: 10px;
   border-radius: 17px 17px 17px 17px;
-  background-color: rgb(160,181,169)
+  background-color: rgb(160,181,169);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-navigation__login-container:hover {
   background-color: #f8f7f4;
+  color: #323232;
+}
+
+.user-navigation__login-image {
+  margin-right: 5px;
 }
 
 .user-navigation__cart-container {
   width: 99px;
   height: 32px;
   border-radius: 17px 17px 17px 17px;
-  background-color: rgb(160,181,169)
+  background-color: rgb(160,181,169);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-navigation__cart-container:hover {
   background-color: #f8f7f4;
+  color: #323232;
+}
+
+.user-navigation__cart-image {
+  margin-right: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__media-list {
+  display: flex;
+}
+
+.footer__media-item {
+  margin-right: 5px;
 }
 
 .footer__media-item a {
@@ -132,14 +201,30 @@ body {
 
 .footer__info-list {
   font-size: 13px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
 }
 
 .footer__info-item_important {
   font-weight: 700;
 }
 
+.footer__info-item {
+  margin-left: 20px;
+}
+
+.footer__credintials {
+  margin-top: 25px;
+}
+
+.footer__credintials-info {
+  margin-top: 5px;
+}
+
 .footer__credintials a {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .footer__credintials span {
@@ -149,17 +234,43 @@ body {
 /* INDEX */
 
 .seo {
-  border-radius: 30px;
+  border-radius: 15px;
 
   color: #323232;
 
   background-image: url("../img/waffel.png");
+
+  border-top: 1px solid transparent;
 }
 
 .seo__header {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+
+  margin: 25px;
+  margin-top: 25px;
+}
+
+.seo__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seo__item {
+  display: flex;
+  flex-basis: 400px;
+  margin-left: 20px;
+}
+
+.seo__image {
+  flex-basis: 49px;
+  margin-right: 10px;
+}
+
+.news {
+  display: flex;
+  margin-top: 30px;
 }
 
 .news__blog {
@@ -168,17 +279,19 @@ body {
   color: #323232;
 
   background-image: url("../img/berry.png");
-  background-position-x: -53px;
+  background-position-x: -123px;
   background-position-y: -225px;
 
   width: 560px;
-  height: 220px;
+  margin-right: 20px;
 }
 
 .news__header {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+
+  margin: 25px;
 }
 
 .news a {
@@ -187,6 +300,8 @@ body {
   color: #323232;
 
   border-bottom: 2px solid #323232;
+
+  margin-left: 25px;
 }
 
 .news__newsletter {
@@ -198,20 +313,38 @@ body {
   background-size: cover;
 
   width: 560px;
-  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news__newsletter-container {
+  display: flex;
+  align-items: center;
+}
+
+.news__input-button {
+  margin: 0 10px;
+}
+
+.news__newsletter-description {
+  margin: 25px;
 }
 
 .news__background {
   background-color: #f8f7f4;
   border-radius: 30px;
 
-  width: 552px;
   height: 212px;
+  margin: 4px;
 }
 
 .news__newsletter-input {
   height: 43px;
-  width: 367px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 30px;
+  margin-left: 25px;
 }
 
 /* CATALOG */
