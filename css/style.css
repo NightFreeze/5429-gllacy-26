@@ -93,7 +93,7 @@ body {
 
 .main-navigation__list {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .main-navigation__item {
@@ -352,6 +352,9 @@ body {
 .navigation__item_current {
   width: 85px;
   height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 17px;
 
@@ -385,6 +388,25 @@ h1 {
   font-size: 16px;
   line-height: 22px;
 }
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  margin-right: 5px;
+}
+
+.catalog {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 350px;
+}
+
 /* INTERACTIVE ELEMENTS */
 .catalog-list {
   background-color: #f8f7f4;
