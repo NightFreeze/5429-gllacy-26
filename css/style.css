@@ -1,6 +1,6 @@
 /* global */
 body {
-  width: 1000px;
+  width: 1150px;
   margin: 0 auto;
   padding: 0;
 
@@ -259,12 +259,12 @@ body {
 
 .seo__item {
   display: flex;
-  flex-basis: 400px;
+  flex-basis: 540px;
   margin-left: 20px;
 }
 
 .seo__image {
-  flex-basis: 49px;
+  min-width: 49px;
   margin-right: 10px;
 }
 
@@ -274,15 +274,15 @@ body {
 }
 
 .news__blog {
-  border-radius: 30px;
+  border-radius: 15px;
 
   color: #323232;
 
   background-image: url("../img/berry.png");
-  background-position-x: -123px;
+  background-position-x: -45px;
   background-position-y: -225px;
 
-  width: 560px;
+  width: 565px;
   margin-right: 20px;
 }
 
@@ -294,25 +294,36 @@ body {
   margin: 25px;
 }
 
-.news a {
+.news .link {
+  border-bottom: 2px solid #323232;
+}
+
+.news__info {
+  display: block;
+  width: 285px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 27px;
   font-size: 24px;
   font-weight: 700;
   color: #323232;
 
+  /* text-decoration: underline; */
   border-bottom: 2px solid #323232;
 
   margin-left: 25px;
 }
 
 .news__newsletter {
-  border-radius: 30px;
+  border-radius: 15px;
 
   color: #323232;
 
   background: url("../img/bg-post.svg") no-repeat;
   background-size: cover;
 
-  width: 560px;
+  width: 570px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,7 +344,7 @@ body {
 
 .news__background {
   background-color: #f8f7f4;
-  border-radius: 30px;
+  border-radius: 15px;
 
   height: 212px;
   margin: 4px;
@@ -348,7 +359,6 @@ body {
 }
 
 /* CATALOG */
-
 .navigation__item_current {
   width: 85px;
   height: 31px;
@@ -377,6 +387,9 @@ h1 {
 .catalog-item__header {
   font-size: 45px;
   font-weight: 700;
+
+  position: absolute;
+  bottom: 45px;
 }
 
 .catalog-item__kilo {
@@ -387,6 +400,11 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
+}
+
+.breadcrumbs {
+  margin-right: 0;
 }
 
 .breadcrumbs__list {
@@ -398,13 +416,21 @@ h1 {
 }
 
 .catalog {
-  width: 1000px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .catalog-item {
-  width: 350px;
+  width: 267px;
+  margin-right: 25px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.catalog-item:nth-child(4), 
+.catalog-item:nth-child(8), 
+.catalog-item:nth-child(12) {
+  margin-right: 0;
 }
 
 /* INTERACTIVE ELEMENTS */
@@ -416,8 +442,4 @@ h1 {
 
 li .catalog-item{
   color: #323232;
-}
-
-.catalog-item:first-child {
-  font-weight: 700;
 }
