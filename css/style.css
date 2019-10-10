@@ -419,6 +419,7 @@ h1 {
 
 .breadcrumbs__list {
   display: flex;
+  padding-left: 0;
 }
 
 .breadcrumbs__item {
