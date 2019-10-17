@@ -314,15 +314,15 @@ body {
   font-weight: 700;
   color: #323232;
 
-  /* text-decoration: underline; */
+  text-decoration: underline;
   /* border-bottom: 2px solid #323232; */
 
   margin-left: 25px;
 
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 100%, transparent 100%);
+/*   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 100%, transparent 100%);
   background-position: 0 18px;
   background-repeat: repeat-x;
-  background-size:  1px 1px;
+  background-size:  1px 1px; */
 }
 
 .news__newsletter {
