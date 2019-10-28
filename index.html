@@ -10,20 +10,20 @@
 </head>
 
 <body>
-  <div class="main-wrapper">
+  <div class="centerWrapper">
     <header class="header">
       <nav class="main-navigation">
         <div class="main-navigation__container">
-          <a><img class="main-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"><a>
+          <img class="main-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item">
+            <li class="main-navigation__item main-navigation__item-active">
               <a class="link" href="#">Каталог</a>
-              <ul class="catalog-list visually-hidden">
-                <li class="catalog-item"><a class="link" href="#">Новинки</a></li>
-                <li class="catalog-item"><a class="link" href="catalog.html">Сливочное</a></li>
-                <li class="catalog-item"><a class="link" href="#">Щербеты</a></li>
-                <li class="catalog-item"><a class="link" href="#">Фруктовый лёд</a></li>
-                <li class="catalog-item"><a class="link" href="#">Мелорин</a></li>
+              <ul class="interactive-menu__list">
+                <li class="interactive-menu__item interactive-menu__item_main"><a class="link" href="#">Новинки</a></li>
+                <li class="interactive-menu__item"><a class="link" href="catalog.html">Сливочное</a></li>
+                <li class="interactive-menu__item"><a class="link" href="#">Щербеты</a></li>
+                <li class="interactive-menu__item"><a class="link" href="#">Фруктовый лёд</a></li>
+                <li class="interactive-menu__item"><a class="link" href="#">Мелорин</a></li>
               </ul>
             </li>
             <li class="main-navigation__item"><a class="link" href="#">Доставка и оплата</a></li>
@@ -119,14 +119,17 @@
           </div>
         </section>
       </section>
-      <section class="ask-form visually-hidden">
-        <img src="img/cross-big.svg" width="18" height="17" alt="Закрыть">
-        <form class="form" method="post" action="#">
-          <input class="input" id="contact-login" type="text" placeholder="Как вас зовут?" aria-label="Введите имя">
-          <input class="input" id="contact-email" type="text" placeholder="Ваша почта для ответа?"
+      <section class="interactive-ask-form">
+        <div class="interactive-ask-form__heading-line">
+          <h1 class="interactive-ask-form__header">Мы обязательно вам ответим!</h1>
+          <img class="interactive-ask-form__cross" src="img/cross-big.svg" width="18" height="17" alt="Закрыть">
+        </div>
+        <form class="interactive-ask__form form" method="post" action="#">
+          <input class="interactive-ask__input input" id="contact-login" type="text" placeholder="Как вас зовут?" aria-label="Введите имя">
+          <input class="interactive-ask__input input" id="contact-email" type="text" placeholder="Ваша почта для ответа?"
             aria-label="Введите вашу почту">
-          <textarea aria-label="Введите ваше сообщение">Напишите что-нибудь</textarea>
-          <button class="button" type="submit">Отправить</button>
+          <textarea class="interactive-ask__textarea input" aria-label="Введите ваше сообщение" rows="5">Напишите что-нибудь</textarea>
+          <button class="interactive-ask__button button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
